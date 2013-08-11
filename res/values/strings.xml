@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TabSingleActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="spinner_cat_prompt">Choose the color</string>
+    <string-array name="spinner_cat_entities">
+        <item >DRINKS</item>
+        <item>STARTERS</item>
+        <item>PIZZA</item>
+        <item>PASTA</item>
+        <item>BURGER</item>
+        <item>ALL ITEMS</item>
+    </string-array>
+
+</resources>

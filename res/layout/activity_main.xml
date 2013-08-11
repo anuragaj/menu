@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    android:baselineAligned="false">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+				        <Spinner
+				            android:id="@+id/spinner1"
+				            android:layout_width="151dp"
+				            android:layout_height="wrap_content"
+				            android:layout_alignParentLeft="true"
+				            android:layout_alignParentTop="true"
+				            android:entries="@array/spinner_cat_entities"
+				            android:prompt="@string/spinner_cat_prompt" />
+
+					        <TextView
+					            android:id="@+id/desc"
+					            android:layout_width="match_parent"
+					            android:layout_height="76dp"
+					            android:layout_alignBottom="@+id/spinner1"
+					            android:layout_toRightOf="@+id/spinner1"
+					            android:text=" Description of the item goes here" />
+        
+					         <fragment
+					            android:id="@+id/fragment1"
+					            android:name="android.app.ListFragment"
+					            android:layout_width="270dp"
+					            android:layout_height="match_parent"
+					            android:layout_alignParentBottom="true"
+					            android:layout_alignParentRight="true"
+					            android:layout_below="@+id/desc" />
+					
+					        <fragment
+					            android:id="@+id/fragment01"
+					            android:name="android.app.ListFragment"
+					            android:layout_width="80dp"
+					            android:layout_height="134dp"
+					            android:layout_alignParentBottom="true"
+					            android:layout_alignParentLeft="true"
+					            android:layout_alignTop="@+id/fragment1"
+					            android:layout_toLeftOf="@+id/fragment1" />
+        
+
+    </RelativeLayout>
+               <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+					        <Spinner
+					            android:id="@+id/spinner2"
+					            android:layout_width="151dp"
+					            android:layout_height="wrap_content"
+					            android:layout_alignParentLeft="true"
+					            android:layout_alignParentTop="true"
+					            android:entries="@array/spinner_cat_entities"
+					            android:prompt="@string/spinner_cat_prompt" />
+					
+					        <TextView
+					            android:id="@+id/desc2"
+					            android:layout_width="match_parent"
+					            android:layout_height="76dp"
+					            android:layout_alignBottom="@+id/spinner2"
+					            android:layout_toRightOf="@+id/spinner2"
+					            android:text=" Description of the item goes here" />
+					        
+					         <fragment
+					            android:id="@+id/fragment21"
+					            android:name="android.app.ListFragment"
+					            android:layout_width="270dp"
+					            android:layout_height="match_parent"
+					            android:layout_alignParentBottom="true"
+					            android:layout_alignParentRight="true"
+					            android:layout_below="@+id/desc2" />
+					
+					        <fragment
+					            android:id="@+id/fragment22"
+					            android:name="android.app.ListFragment"
+					            android:layout_width="80dp"
+					            android:layout_height="134dp"
+					            android:layout_alignParentBottom="true"
+					            android:layout_alignParentLeft="true"
+					            android:layout_alignTop="@+id/fragment21"
+					            android:layout_toLeftOf="@+id/fragment21" />
+        
+
+    </RelativeLayout>
+               <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+					        <Spinner
+					            android:id="@+id/spinner3"
+					            android:layout_width="151dp"
+					            android:layout_height="wrap_content"
+					            android:layout_alignParentLeft="true"
+					            android:layout_alignParentTop="true"
+					            android:entries="@array/spinner_cat_entities"
+					            android:prompt="@string/spinner_cat_prompt" />
+					
+					        <TextView
+					            android:id="@+id/desc3"
+					            android:layout_width="match_parent"
+					            android:layout_height="76dp"
+					            android:layout_alignBottom="@+id/spinner3"
+					            android:layout_toRightOf="@+id/spinner3"
+					            android:text=" Description of the item goes here" />
+					        
+					         <fragment
+					            android:id="@+id/fragment31"
+					            android:name="android.app.ListFragment"
+					            android:layout_width="270dp"
+					            android:layout_height="match_parent"
+					            android:layout_alignParentBottom="true"
+					            android:layout_alignParentRight="true"
+					            android:layout_below="@+id/desc3" />
+					
+					        <fragment
+					            android:id="@+id/fragment32"
+					            android:name="android.app.ListFragment"
+					            android:layout_width="80dp"
+					            android:layout_height="134dp"
+					            android:layout_alignParentBottom="true"
+					            android:layout_alignParentLeft="true"
+					            android:layout_alignTop="@+id/fragment31"
+					            android:layout_toLeftOf="@+id/fragment31" />
+					        
+					
+					    </RelativeLayout>
+					    
+          
+
+                
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
